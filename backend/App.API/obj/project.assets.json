@@ -1169,7 +1169,10 @@
         },
         "runtime": {
           "bin/placeholder/App.Repositories.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "App.Services/1.0.0": {
         "type": "project",
