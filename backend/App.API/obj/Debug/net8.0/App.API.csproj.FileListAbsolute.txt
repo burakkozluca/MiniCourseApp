@@ -82,3 +82,7 @@
 /Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/obj/Debug/net8.0/App.API.pdb
 /Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/obj/Debug/net8.0/App.API.genruntimeconfig.cache
 /Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/obj/Debug/net8.0/ref/App.API.dll
+/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/bin/Debug/net8.0/AutoMapper.dll
+/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/bin/Debug/net8.0/FluentValidation.dll
+/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/bin/Debug/net8.0/FluentValidation.AspNetCore.dll
+/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll

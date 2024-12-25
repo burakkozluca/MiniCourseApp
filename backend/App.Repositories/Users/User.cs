@@ -4,5 +4,10 @@ namespace App.Repositories.Users;
 
 public class User : IdentityUser<string>
 {
-    public string? Name { get; set; } 
+    public User()
+    {
+        Id = Guid.NewGuid().ToString();
+    }
+
+    //name and surname
 }

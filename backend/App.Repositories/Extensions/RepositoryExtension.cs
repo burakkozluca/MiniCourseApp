@@ -1,3 +1,5 @@
+using App.Repositories.Users;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,19 @@ public static class RepositoryExtension
                 sqlServerOptionsAction.MigrationsAssembly(typeof(RepositoryAssembly).Assembly.FullName);
             });
         });
+        
+        services.AddIdentity<User, IdentityRole>(options => 
+        {
+            options.User.RequireUniqueEmail = true;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireDigit = true;
+            options.Password.RequireLowercase = true;
+            options.Password.RequireUppercase = true;
+            options.Password.RequiredLength = 8;
+        }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+        
+        
         return services;
+        
     }
 }

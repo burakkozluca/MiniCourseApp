@@ -8,76 +8,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79460064-6a5b-41e0-9538-d4c238a3d21c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniCourseApp/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniCourseApp/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.MiniCourseApp/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/App.API.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/App.API.http" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/Controllers/WeatherForecastController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/Program.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/Properties/launchSettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/WeatherForecast.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/App.API.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/App.API.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/App.API.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/App.API.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/App.API.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/App.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/App.API.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/App.API.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/Debug/net8.0/App.API.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.API/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/App.Repositories.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/App.Repositories.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/App.Repositories.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/App.Repositories.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/App.Repositories.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/App.Repositories.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/App.Repositories.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/App.Repositories.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/App.Repositories.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/Debug/net8.0/App.Repositories.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Repositories/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/App.Services.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/App.Services.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/App.Services.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/App.Services.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/App.Services.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/App.Services.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/App.Services.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/App.Services.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/App.Services.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/Debug/net8.0/App.Services.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.Services/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MiniCourseApp.sln" beforeDir="false" />
-    </list>
+    <list default="true" id="79460064-6a5b-41e0-9538-d4c238a3d21c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -92,6 +33,9 @@
   }
 }</component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -103,7 +47,9 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.App.API: http.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -154,6 +100,8 @@
       <option name="presentableId" value="Default" />
       <updated>1734949348995</updated>
       <workItem from="1734949350255" duration="2041000" />
+      <workItem from="1734980856927" duration="1239000" />
+      <workItem from="1735127642361" duration="9192000" />
     </task>
     <task id="LOCAL-00001" summary="project started">
       <option name="closed" value="true" />
@@ -174,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="project started" />
-    <option name="LAST_COMMIT_MESSAGE" value="project started" />
+    <MESSAGE value="change directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="change directory" />
   </component>
 </project>
