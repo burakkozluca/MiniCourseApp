@@ -1,4 +1,6 @@
 using System.Reflection;
+using App.Repositories.Categories;
+using App.Repositories.Courses;
 using App.Repositories.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -13,7 +15,8 @@ public class AppDbContext : IdentityDbContext<User, IdentityRole, string>
         
     }
     
-    //public DbSet<Courses> Courses { get; set; };
+    public DbSet<Category> Categories { get; set; }
+    public DbSet<Course> Courses { get; set; }
     
     protected override void OnModelCreating(ModelBuilder builder)
     {

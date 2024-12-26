@@ -8,9 +8,9 @@ public class UserMappingProfile : Profile
 {
     public UserMappingProfile()
     {
-        CreateMap<User, UserDto>().ReverseMap();
-        
-        CreateMap<UpdateUserRequest, User>()
-            .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
+        CreateMap<User, UserDto>();
+
+        //CreateMap<UpdateUserRequest, User>()
+        //   .ForAllMembers(opts => opts.Condition((src, dest, srcMember) => srcMember != null));
     }
 }

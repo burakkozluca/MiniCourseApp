@@ -9,5 +9,7 @@ public class User : IdentityUser<string>
         Id = Guid.NewGuid().ToString();
     }
 
-    //name and surname
+    public string? FirstName { get; set; }
+    
+    public string? LastName { get; set; }
 }

@@ -4,7 +4,7 @@ namespace App.Services.Users.Update;
 
 public class UpdateUserRequestValidation : AbstractValidator<UpdateUserRequest>
 {
-    public UpdateUserRequestValidation()
+    /*public UpdateUserRequestValidation()
     {
         RuleFor(x => x.FirstName)
             .NotEmpty()
@@ -27,5 +27,5 @@ public class UpdateUserRequestValidation : AbstractValidator<UpdateUserRequest>
         RuleFor(x => x.PhoneNumber)
             .NotEmpty()
             .WithMessage("Phone number is required.");
-    }
+    }*/
 }

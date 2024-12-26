@@ -16921,7 +16921,7 @@
     <table id="5582" parent="5573" name="AspNetUsers">
       <CreatedTimestamp>2024-12-23.18:43:59.820</CreatedTimestamp>
       <DataRetentionPeriod>-1</DataRetentionPeriod>
-      <ModifiedTimestamp>2024-12-25.18:02:59.013</ModifiedTimestamp>
+      <ModifiedTimestamp>2024-12-26.11:55:26.633</ModifiedTimestamp>
       <ObjectId>1269579561</ObjectId>
       <LobDataSpaceId>1</LobDataSpaceId>
     </table>
@@ -17276,50 +17276,58 @@ Name</ColNames>
       <Position>16</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <index id="5644" parent="5582" name="PK_AspNetUsers">
+    <column id="5644" parent="5582" name="FirstName">
+      <Position>17</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <column id="5645" parent="5582" name="LastName">
+      <Position>18</Position>
+      <StoredType>nvarchar(max)|0s</StoredType>
+    </column>
+    <index id="5646" parent="5582" name="PK_AspNetUsers">
       <Clustering>1</Clustering>
       <ColNames>Id</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5645" parent="5582" name="EmailIndex">
+    <index id="5647" parent="5582" name="EmailIndex">
       <ColNames>NormalizedEmail</ColNames>
       <Position>2</Position>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <index id="5646" parent="5582" name="UserNameIndex">
+    <index id="5648" parent="5582" name="UserNameIndex">
       <ColNames>NormalizedUserName</ColNames>
       <Condition>[NormalizedUserName] IS NOT NULL</Condition>
       <Position>3</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5647" parent="5582" name="PK_AspNetUsers">
+    <key id="5649" parent="5582" name="PK_AspNetUsers">
       <CreatedTimestamp>2024-12-23.18:43:59.820</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-23.18:43:59.820</ModifiedTimestamp>
       <ObjectId>1285579618</ObjectId>
       <Primary>1</Primary>
       <UnderlyingIndexName>PK_AspNetUsers</UnderlyingIndexName>
     </key>
-    <column id="5648" parent="5583" name="MigrationId">
+    <column id="5650" parent="5583" name="MigrationId">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>nvarchar(150 char)|0s</StoredType>
     </column>
-    <column id="5649" parent="5583" name="ProductVersion">
+    <column id="5651" parent="5583" name="ProductVersion">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>nvarchar(32 char)|0s</StoredType>
     </column>
-    <index id="5650" parent="5583" name="PK___EFMigrationsHistory">
+    <index id="5652" parent="5583" name="PK___EFMigrationsHistory">
       <Clustering>1</Clustering>
       <ColNames>MigrationId</ColNames>
       <Position>1</Position>
       <Unique>1</Unique>
       <PartitionDataSpaceId>1</PartitionDataSpaceId>
     </index>
-    <key id="5651" parent="5583" name="PK___EFMigrationsHistory">
+    <key id="5653" parent="5583" name="PK___EFMigrationsHistory">
       <CreatedTimestamp>2024-12-23.18:43:59.037</CreatedTimestamp>
       <ModifiedTimestamp>2024-12-23.18:43:59.037</ModifiedTimestamp>
       <ObjectId>1221579390</ObjectId>
