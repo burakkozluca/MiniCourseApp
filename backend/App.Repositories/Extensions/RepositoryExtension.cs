@@ -31,6 +31,10 @@ public static class RepositoryExtension
             options.Password.RequiredLength = 8;
         }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
         
+        //courses repository
+        
+        services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+        services.AddScoped<IUnitOfWork , UnitOfWork>();
         
         return services;
         
