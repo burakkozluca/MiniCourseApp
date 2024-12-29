@@ -13,6 +13,7 @@
         "packagesPath": "/Users/burakkozluca/.nuget/packages/",
         "outputPath": "/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.API/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/burakkozluca/.nuget/NuGet/NuGet.Config"
         ],
@@ -40,7 +41,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -71,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/burakkozluca/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -84,6 +85,7 @@
         "packagesPath": "/Users/burakkozluca/.nuget/packages/",
         "outputPath": "/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.Repositories/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/burakkozluca/.nuget/NuGet/NuGet.Config"
         ],
@@ -107,7 +109,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -152,7 +154,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/burakkozluca/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
@@ -165,6 +167,7 @@
         "packagesPath": "/Users/burakkozluca/.nuget/packages/",
         "outputPath": "/Users/burakkozluca/RiderProjects/MiniCourseApp/backend/App.Services/obj/",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
           "/Users/burakkozluca/.nuget/NuGet/NuGet.Config"
         ],
@@ -192,7 +195,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
+          "auditMode": "all"
         }
       },
       "frameworks": {
@@ -231,7 +234,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/burakkozluca/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

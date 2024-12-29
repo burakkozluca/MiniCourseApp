@@ -1,3 +1,5 @@
+using App.Repositories.Categories;
+using App.Repositories.Courses;
 using App.Repositories.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -30,8 +32,9 @@ public static class RepositoryExtension
             options.Password.RequireUppercase = true;
             options.Password.RequiredLength = 8;
         }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
-        
-        //courses repository
+
+        services.AddScoped<ICourseRepository, CourseRepository>();
+        services.AddScoped<ICategoryRepository, CategoryRepository>();
         
         services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
         services.AddScoped<IUnitOfWork , UnitOfWork>();

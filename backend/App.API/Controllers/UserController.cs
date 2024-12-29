@@ -16,9 +16,9 @@ public class UserController(IUserService userService) : CustomController
     }
     
     [HttpGet]
-    public async Task<IActionResult> GetUser(string userName)
+    public async Task<IActionResult> GetUser()
     {
-        var result = await userService.GetUserByName(userName);
+        var result = await userService.GetUserByName(HttpContext.User.Identity.Name);
         return CreateActionResult(result);
     }
     

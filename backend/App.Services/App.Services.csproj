@@ -11,7 +11,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Admin\" />
+      <Folder Include="Auth\" />
+      <Folder Include="Baskets\" />
     </ItemGroup>
 
     <ItemGroup>
