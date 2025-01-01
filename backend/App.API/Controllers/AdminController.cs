@@ -1,8 +1,10 @@
 using App.Services.Admin;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace App.API.Controllers;
 
+[Authorize]
 public class AdminController(IAdminService adminService) : CustomController
 {
     [HttpGet("users")]
