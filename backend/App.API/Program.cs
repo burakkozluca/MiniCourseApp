@@ -48,6 +48,7 @@ app.UseStaticFiles(new StaticFileOptions
     RequestPath = "/Resources" 
     
 });
+
 app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();

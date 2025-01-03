@@ -4,6 +4,7 @@ using App.Repositories.Courses;
 using App.Services.Courses.Create;
 using App.Services.Courses.Update;
 using App.Services.Courses.UpdateStock;
+using App.Services.Helpers;
 using AutoMapper;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
@@ -15,7 +16,8 @@ public class CourseService
         ICourseRepository courseRepository,
         IUnitOfWork unitOfWork,
         IValidator<CreateCourseRequest> createCourseRequestValidator,
-        IMapper mapper
+        IMapper mapper,
+        IFileService fileService
         ) : ICourseService
 {
     
@@ -25,17 +27,25 @@ public class CourseService
 
         if (anyCourse)
         {
-            return ServiceResult<CreateCourseResponse>.Fail("course name already exists in the database.",
+            return ServiceResult<CreateCourseResponse>.Fail("ürün ismi veritabanında bulunmaktadır.",
                 HttpStatusCode.BadRequest);
+        }
+        string? imageUrl = null;
+
+        if (request.imageFile is not null)
+        {
+            imageUrl = await fileService.SaveFileAsync(request.imageFile);
         }
 
         var course = mapper.Map<Course>(request);
+        course.ImageUrl = imageUrl;
 
         await courseRepository.AddAsync(course);
         await unitOfWork.SaveChangesAsync();
+        return ServiceResult<CreateCourseResponse>.SuccessCreated(new CreateCourseResponse(course.Id)
+            ,$"api/courses/{course.Id}"); 
 
-        return ServiceResult<CreateCourseResponse>.SuccessCreated(new CreateCourseResponse(course.Id),
-            $"api/courses/{course.Id}");
+
     }
     
     public async Task<ServiceResult> DeleteAsync(int id)
@@ -56,7 +66,7 @@ public class CourseService
     public async Task<ServiceResult<List<CourseDto>>> GetAllListAsync()
     {
         var courses = await courseRepository.GetAll().ToListAsync();
-
+        
         var coursesDto = mapper.Map<List<CourseDto>>(courses);
 
         return ServiceResult<List<CourseDto>>.Success(coursesDto);
@@ -109,7 +119,28 @@ public class CourseService
             return ServiceResult.Fail("Course not found", HttpStatusCode.NotFound);
         }
 
-        mapper.Map(request, course);
+        string? courseImg = course.ImageUrl;
+        
+        var isCourseNameExist = await courseRepository.Where(x => x.Name == request.Name && x.Id != course.Id).AnyAsync(); 
+        
+        if (isCourseNameExist)
+        {
+            return ServiceResult.Fail("ürün ismi veritabanında bulunmaktadır.",
+                HttpStatusCode.BadRequest);
+        }
+        
+        string? imageUrl = null;
+        
+        if(request.imageFile is not null)
+        {
+            imageUrl = await fileService.SaveFileAsync(request.imageFile);
+            course.ImageUrl = imageUrl;
+        }
+        else
+        {
+            course.ImageUrl = courseImg;
+        }
+        course = mapper.Map(request, course);
 
         courseRepository.Update(course);
         await unitOfWork.SaveChangesAsync();

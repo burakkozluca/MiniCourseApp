@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace App.API.Controllers;
 
-[Authorize]
+[Authorize(Roles = "admin")]
 public class AdminController(IAdminService adminService) : CustomController
 {
     [HttpGet("users")]

@@ -10,9 +10,9 @@ public interface IUserService
     
     Task<ServiceResult<UserDto>> GetUserByName(string userName);
     
-    //Task<ServiceResult> ChangePassword(UpdatePasswordRequest request , string userId);
+    Task<ServiceResult> ChangePassword(UpdatePasswordRequest request , string userId);
     
     Task<ServiceResult<UserDto>> UpdateUserAsync(UpdateUserRequest request, string userId);
     
-    //Task<ServiceResult> ResetPassword(ResetPasswordRequest request);
+    Task<ServiceResult> ResetPassword(ResetPasswordRequest request);
 }
