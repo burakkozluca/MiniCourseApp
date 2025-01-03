@@ -1,0 +1,32 @@
+.admin-dashboard {
+  padding: 2rem;
+}
+
+.card {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border: none;
+}
+
+.card-header {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 1rem;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  border-top: none;
+  font-weight: 600;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+} 
