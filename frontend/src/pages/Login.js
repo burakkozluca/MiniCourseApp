@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import './Login.css';
 
@@ -7,14 +7,25 @@ const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const { login } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
 
+  useEffect(() => {
+    // Register sayfasından gelen başarı mesajını göster
+    if (location.state?.successMessage) {
+      setSuccessMessage(location.state.successMessage);
+      // URL'den state'i temizle
+      window.history.replaceState({}, document.title);
+    }
+  }, [location]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    setSuccessMessage('');
     setLoading(true);
 
     try {
@@ -32,6 +43,11 @@ const Login = () => {
     <div className="login-container">
       <div className="login-box">
         <h2>Login to MiniUdemy</h2>
+        {successMessage && (
+          <div className="alert alert-success" role="alert">
+            {successMessage}
+          </div>
+        )}
         {error && (
           <div className="alert alert-danger" role="alert">
             {error}
@@ -71,6 +87,9 @@ const Login = () => {
             Login
           </button>
         </form>
+        <div className="mt-3 text-center">
+          Don't have an account? <Link to="/register">Register here</Link>
+        </div>
       </div>
     </div>
   );

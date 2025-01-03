@@ -1,0 +1,30 @@
+.cart-page {
+  min-height: 80vh;
+}
+
+.cart-item {
+  transition: all 0.3s ease;
+}
+
+.cart-item:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.cart-item img {
+  height: 150px;
+  object-fit: cover;
+  padding: 1rem;
+}
+
+.cart-summary {
+  max-width: 400px;
+  margin-left: auto;
+}
+
+.btn-danger {
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  transform: scale(1.05);
+} 

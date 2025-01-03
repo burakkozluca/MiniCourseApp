@@ -59,12 +59,15 @@ export const AuthProvider = ({ children }) => {
 
   const isAuthenticated = () => {
     const token = localStorage.getItem('accessToken');
+    console.log('isAuthenticated check - token:', token);
     if (!token) return false;
     
     try {
       const decodedToken = jwtDecode(token);
-      return decodedToken.exp * 1000 > Date.now();
+      if (decodedToken.exp * 1000 > Date.now()) 
+        return true;
     } catch {
+      console.log('isAuthenticated check - token is expired');
       return false;
     }
   };

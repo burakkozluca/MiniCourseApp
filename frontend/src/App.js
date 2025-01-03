@@ -5,7 +5,7 @@ import Navbar from "./layouts/Navbar";
 import Footer from "./layouts/Footer";
 import AdminLayout from "./layouts/AdminLayout";
 import Home from "./pages/Home";
-import PaymentForm from "./pages/PaymentForm";
+import PaymentPage from "./pages/PaymentPage";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
 import Cart from "./pages/Cart";
@@ -15,8 +15,11 @@ import { AuthGuard } from './guards/AuthGuard';
 import { AdminGuard } from './guards/AdminGuard';
 import AdminCourses from './pages/admin/AdminCourses';
 import AdminUsers from './pages/admin/AdminUsers';
+import Register from './pages/Register';
+import PaymentSuccess from './pages/PaymentSuccess';
+import MyCourses from './pages/MyCourses';
+import './App.css';
 
-// Layout component for public and protected routes
 const MainLayout = () => (
   <>
     <Navbar />
@@ -34,27 +37,29 @@ export default function App() {
         <CartProvider>
           <Routes>
             {/* Admin Routes */}
-            <Route path="/admin" element={
-              <AdminGuard>
-                <AdminLayout />
-              </AdminGuard>
-            }>
-              <Route index element={<Admin />} />
-              <Route path="courses" element={<AdminCourses />} />
-              <Route path="users" element={<AdminUsers />} />
+            <Route element={<AdminGuard />}>
+              <Route element={<AdminLayout />}>
+                <Route path="/admin" element={<Admin />} />
+                <Route path="/admin/courses" element={<AdminCourses />} />
+                <Route path="/admin/users" element={<AdminUsers />} />
+              </Route>
             </Route>
 
-            {/* Public Routes */}
+            {/* Main Layout */}
             <Route element={<MainLayout />}>
+              {/* Public Routes */}
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
               <Route path="/course/:id" element={<CourseDetail />} />
-            
+
               {/* Protected Routes */}
               <Route element={<AuthGuard />}>
                 <Route path="/profile" element={<Profile />} />
                 <Route path="/cart" element={<Cart />} />
-                <Route path="/payment" element={<PaymentForm />} />
+                <Route path="/payment" element={<PaymentPage />} />
+                <Route path="/payment-success" element={<PaymentSuccess />} />
+                <Route path="/my-courses" element={<MyCourses />} />
               </Route>
             </Route>
           </Routes>

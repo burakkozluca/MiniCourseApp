@@ -24,11 +24,11 @@ export const userService = {
    * @param {CreateUserRequest} request
    */
   createUser: (request) => {
-    return axiosInstance.post('/user/createuser', request);
+    return axiosInstance.post('/User', request);
   },
 
   getUser: () => {
-    return axiosInstance.get('/user/getuser');
+    return axiosInstance.get('/User');
   },
 
   /**
@@ -36,13 +36,13 @@ export const userService = {
    * @param {string} userId
    */
   changePassword: (request, userId) => {
-    return axiosInstance.post(`/user/changepassword?userId=${userId}`, request);
+    return axiosInstance.post(`/User/ChangePassword`, request);
   },
 
   /**
    * @param {UpdateUserRequest} request
    */
   updateProfile: (request) => {
-    return axiosInstance.post('/user/updateprofile', request);
+    return axiosInstance.post('/User/UpdateProfile', request);
   },
 };

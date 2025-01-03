@@ -97,4 +97,12 @@ export const courseService = {
     if (!imageUrl) return null;
     return `http://localhost:5250/Resources/${imageUrl}`;
   },
+
+  getMyCourses: () => {
+    return axiosInstance.get('/Course/my-courses');
+  },
+
+  purchaseCourse: (courseId) => {
+    return axiosInstance.post(`/Course/purchase/${courseId}`);
+  },
 };
