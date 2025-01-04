@@ -1,0 +1,106 @@
+.admin-courses {
+  padding: 1rem;
+}
+
+.course-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.table th {
+  font-weight: 600;
+}
+
+.table td {
+  vertical-align: middle;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1050;
+}
+
+.modal {
+  background-color: transparent;
+}
+
+.modal-backdrop {
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  z-index: -1;
+}
+
+.modal-dialog {
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.modal-content {
+  background-color: white;
+  position: relative;
+}
+
+.form-label {
+  font-weight: 500;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #5624d0;
+  box-shadow: 0 0 0 0.2rem rgba(86, 36, 208, 0.25);
+}
+
+.action-buttons {
+  white-space: nowrap;
+}
+
+.action-buttons .btn {
+  padding: 0.25rem 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.action-buttons .btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.action-buttons .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.action-buttons .btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.action-buttons i {
+  font-size: 0.875rem;
+}
+
+/* Mobil görünüm için */
+@media (max-width: 768px) {
+  .action-buttons .btn span {
+    display: none;
+  }
+  
+  .action-buttons .btn i {
+    margin: 0 !important;
+  }
+  
+  .action-buttons .btn {
+    padding: 0.25rem 0.5rem;
+  }
+} 
