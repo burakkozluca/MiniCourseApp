@@ -122,3 +122,9 @@ npm start
 ![Screenshot 2025-01-05 at 21 05 41](https://github.com/user-attachments/assets/5c5d2f7d-dfc4-4810-9e21-363b83840f45)
 ![Screenshot 2025-01-05 at 21 06 13](https://github.com/user-attachments/assets/0096bbe3-edfb-4406-9869-ca0a17b9c389)
 
+## Postman
+![Screenshot 2025-01-05 at 21 41 05](https://github.com/user-attachments/assets/037a4887-b18d-4d98-84ce-23ba1dbebd86)
+![Screenshot 2025-01-05 at 21 41 59](https://github.com/user-attachments/assets/f21bbc87-f5e3-46b1-b328-8447c900d5ee)
+
+![Screenshot 2025-01-05 at 21 43 36](https://github.com/user-attachments/assets/bca92bba-b5eb-4af4-a20d-89a2d3c92bd3)
+![Screenshot 2025-01-05 at 21 44 04](https://github.com/user-attachments/assets/4475f400-8fbd-4d09-a6d1-9304245a4087)
