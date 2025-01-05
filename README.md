@@ -30,6 +30,8 @@ Mini Udemy Uygulaması, kimlik doğrulama ve yetkilendirme için JWT (JSON Web T
 
 ![Screenshot 2025-01-05 at 20 49 53](https://github.com/user-attachments/assets/3b4cb0b7-5552-4497-852e-4aa5ccaf0b94)
 
+![Screenshot 2025-01-05 at 21 03 14](https://github.com/user-attachments/assets/e57fc223-e303-431f-9823-bb6685f223bb)
+
 ### Kurs Yönetimi 📚
 - Kurs listeleme ve filtreleme
 - Detaylı kurs görüntüleme
@@ -65,6 +67,7 @@ Mini Udemy Uygulaması, kimlik doğrulama ve yetkilendirme için JWT (JSON Web T
 - **Redis**
 - **MSSQL**
 - **Docker**
+- **MailKit**
 
 ### Frontend 🎨
 - **React.js**
@@ -75,7 +78,6 @@ Mini Udemy Uygulaması, kimlik doğrulama ve yetkilendirme için JWT (JSON Web T
 - **AlertifyJS**
 
 ## 🏗 Mimari
-
 
 Proje, Clean Architecture prensiplerine uygun olarak geliştirilmiştir:
 - **API Layer**: Controller'lar ve middleware'ler
@@ -111,3 +113,11 @@ cd frontend
 npm install
 npm start
 ```
+
+## Frontend
+
+![Screenshot 2025-01-05 at 21 05 28](https://github.com/user-attachments/assets/ea11835c-c799-462a-91c1-07c485f2de03)
+![Screenshot 2025-01-05 at 21 05 33](https://github.com/user-attachments/assets/64a19a6c-617d-4370-8523-8cab81b15f0f)
+![Screenshot 2025-01-05 at 21 05 41](https://github.com/user-attachments/assets/5c5d2f7d-dfc4-4810-9e21-363b83840f45)
+![Screenshot 2025-01-05 at 21 06 13](https://github.com/user-attachments/assets/0096bbe3-edfb-4406-9869-ca0a17b9c389)
+
