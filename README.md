@@ -78,6 +78,7 @@ Mini Udemy Uygulaması, kimlik doğrulama ve yetkilendirme için JWT (JSON Web T
 - **AlertifyJS**
 
 ## 🏗 Mimari
+![Screenshot 2025-01-05 at 21 20 04](https://github.com/user-attachments/assets/4185c231-ff73-4a59-94a2-30608f1511a2)
 
 Proje, Clean Architecture prensiplerine uygun olarak geliştirilmiştir:
 - **API Layer**: Controller'lar ve middleware'ler
