@@ -12,6 +12,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
+using App.Services.UserCourses;
+using App.Repositories;
+using StackExchange.Redis;
+using App.Services.Cart;
 
 namespace App.Services.Extensions;
 
@@ -26,6 +30,8 @@ public static class ServiceExtensions
         services.AddScoped<ITokenService,TokenService>();
         services.AddScoped<IAuthenticationService,AuthenticationService>();
         services.AddScoped<IFileService,FileService>();
+        services.AddScoped<IUserCourseService, UserCourseService>();
+        services.AddScoped<IUserCourseRepository, UserCourseRepository>();
         
         services.AddSingleton(sp =>
         {
@@ -74,6 +80,10 @@ public static class ServiceExtensions
             };
         });
         
+        services.AddSingleton<IConnectionMultiplexer>(opt => 
+            ConnectionMultiplexer.Connect(configuration.GetConnectionString("Redis")));
+        services.AddScoped<IRedisCartService, RedisCartService>();
+
         return services;
     }
 }

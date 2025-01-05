@@ -1,13 +1,9 @@
 using App.Repositories.Extensions;
 using App.Services;
 using App.Services.Extensions;
-using App.Services.Cart;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
-using StackExchange.Redis;
-using App.Repositories;
-using App.Services.UserCourses;
-using App.Services.Courses;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,17 +26,8 @@ builder.Services.AddRepositories(builder.Configuration).AddServices(builder.Conf
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
-        policy.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyHeader().AllowCredentials());
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 });
-//redis
-builder.Services.AddSingleton<IConnectionMultiplexer>(opt => 
-    ConnectionMultiplexer.Connect(builder.Configuration.GetConnectionString("Redis")));
-builder.Services.AddScoped<IRedisCartService, RedisCartService>();
-
-// Service registrations
-builder.Services.AddScoped<ICourseService, CourseService>();
-builder.Services.AddScoped<IUserCourseService, UserCourseService>();
-builder.Services.AddScoped<IUserCourseRepository, UserCourseRepository>();
 
 var app = builder.Build();
 

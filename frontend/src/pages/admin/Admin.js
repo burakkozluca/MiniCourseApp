@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { courseService } from '../services/courseService';
-import { adminService } from '../services/adminService';
+import { courseService } from '../../services/courseService';
+import { adminService } from '../../services/adminService';
 import './Admin.css';
 
 const Admin = () => {
@@ -94,7 +94,7 @@ const Admin = () => {
                   <tbody>
                     {users.slice(0, 5).map(user => (
                       <tr key={user.id}>
-                        <td>{user.userName}</td>
+                        <td>{user.firstName} {user.lastName}</td>
                         <td>{user.email}</td>
                       </tr>
                     ))}

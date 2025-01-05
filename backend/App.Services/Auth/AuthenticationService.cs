@@ -98,7 +98,7 @@ public class AuthenticationService
         }
 
         var token = await userManager.GeneratePasswordResetTokenAsync(user);
-        var resetLink = $"http://localhost:4200/password-res?email={request.email}&token={Uri.EscapeDataString(token)}";
+        var resetLink = $"http://localhost:3000/password-reset?email={request.email}&token={Uri.EscapeDataString(token)}";
         await mailService.SendPasswordResetEmailAsync(request.email, resetLink);
 
         return ServiceResult.Success();

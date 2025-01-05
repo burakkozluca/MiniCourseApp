@@ -19,5 +19,13 @@ export const authService = {
       return axiosInstance.post('/Auth/RevokeRefreshToken', { token: refreshToken });
     }
     return Promise.resolve();
+  },
+
+  forgotPassword: (request) => {
+    return axiosInstance.post('/Auth/ForgotPassword', request);
+  },
+
+  verifyPasswordReset: (request) => {
+    return axiosInstance.post('/Auth/VerifyUserToken', request);
   }
 };

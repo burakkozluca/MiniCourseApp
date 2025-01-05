@@ -9,7 +9,7 @@ import axiosInstance from "./axiosInstance";
 
 export const adminService = {
   getAllUsers: () => {
-    return axiosInstance.get('/admin/users');
+    return axiosInstance.get('/Admin/users');
   },
 
   /**
@@ -21,7 +21,7 @@ export const adminService = {
     Object.entries(request).forEach(([key, value]) => {
       formData.append(key, value);
     });
-    return axiosInstance.put(`/admin/users/${id}`, formData, {
+    return axiosInstance.put(`/Admin/users/${id}`, formData, {
       headers: { 'Content-Type': 'multipart/form-data' },
     });
   },

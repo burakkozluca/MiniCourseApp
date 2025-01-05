@@ -11,12 +11,16 @@ import axiosInstance from "./axiosInstance";
  * @typedef {Object} UpdatePasswordRequest
  * @property {string} oldPassword
  * @property {string} newPassword
+ * @property {string} reNewPassword
  */
 
 /**
  * @typedef {Object} UpdateUserRequest
+ * @property {string} firstName
+ * @property {string} lastName
  * @property {string} email
- * @property {string} username
+ * @property {string} dateOfBirth
+ * @property {string} phoneNumber
  */
 
 export const userService = {
@@ -33,16 +37,33 @@ export const userService = {
 
   /**
    * @param {UpdatePasswordRequest} request
-   * @param {string} userId
    */
-  changePassword: (request, userId) => {
-    return axiosInstance.post(`/User/ChangePassword`, request);
+  changePassword: (request) => {
+    return axiosInstance.post(`/User/ChangePassword?userId=${request.userId}`, {
+      oldPassword: request.oldPassword,
+      newPassword: request.newPassword,
+      reNewPassword: request.reNewPassword
+    });
   },
 
   /**
    * @param {UpdateUserRequest} request
    */
   updateProfile: (request) => {
-    return axiosInstance.post('/User/UpdateProfile', request);
+    return axiosInstance.post('/User/UpdateProfile', {
+      firstName: request.firstName,
+      lastName: request.lastName,
+      email: request.email,
+      dateOfBirth: request.dateOfBirth,
+      phoneNumber: request.phoneNumber
+    });
   },
+
+  resetPassword: (data) => {
+    return axiosInstance.post('/User/ResetPassword', {
+      email: data.email,
+      resetCode: data.token,
+      newPassword: data.newPassword
+    });
+  }
 };

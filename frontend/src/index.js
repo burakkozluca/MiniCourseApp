@@ -7,7 +7,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'alertifyjs/build/css/alertify.min.css';
 
-
 // Custom CSS
 import './index.css';
 

@@ -8,7 +8,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79460064-6a5b-41e0-9538-d4c238a3d21c" name="Changes" comment="" />
+    <list default="true" id="79460064-6a5b-41e0-9538-d4c238a3d21c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/guards/AdminGuard.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/guards/AdminGuard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/layouts/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/layouts/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/layouts/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/layouts/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Admin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Admin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/CourseDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/CourseDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/MyCourses.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/MyCourses.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/MyCourses.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/MyCourses.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/Profile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/admin/AdminUsers.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/admin/AdminUsers.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/pages/admin/AdminUsers.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/pages/admin/AdminUsers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/adminService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/adminService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/authService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/authService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/courseService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/courseService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/src/services/userService.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/services/userService.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -148,6 +170,7 @@
       <workItem from="1735721474937" duration="1736000" />
       <workItem from="1735741727124" duration="2709000" />
       <workItem from="1735810835852" duration="3580000" />
+      <workItem from="1736090368330" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="project started">
       <option name="closed" value="true" />

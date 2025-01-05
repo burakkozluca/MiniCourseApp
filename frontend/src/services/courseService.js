@@ -105,4 +105,8 @@ export const courseService = {
   purchaseCourse: (courseId) => {
     return axiosInstance.post(`/Course/purchase/${courseId}`);
   },
+
+  getPagedAll: (pageNumber, pageSize) => {
+    return axiosInstance.get(`/Courses/${pageNumber}/${pageSize}`);
+  },
 };

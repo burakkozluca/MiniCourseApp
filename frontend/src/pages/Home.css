@@ -216,3 +216,64 @@
 .courses-section {
   min-height: 100%;
 }
+
+.pagination-container {
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.pagination {
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page-link {
+  border: none;
+  color: #1c1d1f;
+  padding: 8px 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  min-width: 40px;
+  text-align: center;
+}
+
+.page-link:hover:not(.disabled) {
+  background-color: #f0f2f5;
+  color: #a435f0;
+}
+
+.page-item.active .page-link {
+  background-color: #a435f0;
+  color: white;
+}
+
+.page-item.disabled .page-link {
+  background-color: transparent;
+  color: #6a6f73;
+  cursor: not-allowed;
+}
+
+/* Üç nokta stili */
+.page-item.disabled .page-link {
+  background: none;
+  border: none;
+}
+
+/* Sayfa bilgisi stili */
+.text-muted {
+  font-size: 0.9rem;
+}
+
+/* Responsive tasarım için */
+@media (max-width: 576px) {
+  .pagination {
+    gap: 2px;
+  }
+
+  .page-link {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+    min-width: 35px;
+  }
+}

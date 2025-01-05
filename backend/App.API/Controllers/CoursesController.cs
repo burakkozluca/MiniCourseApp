@@ -13,10 +13,10 @@ public class CoursesController(ICourseService courseService) : CustomController
     [HttpGet, AllowAnonymous]
     public async Task<IActionResult> GetAll() => CreateActionResult(await courseService.GetAllListAsync());
     
-    [HttpGet("{id:int}")]
+    [HttpGet("{id:int}"), AllowAnonymous]
     public async Task<IActionResult> GetById(int id) => CreateActionResult(await courseService.GetByIdAsync(id));
     
-    [HttpGet("{pageNumber:int}/{pageSize:int}")]
+    [HttpGet("{pageNumber:int}/{pageSize:int}"), AllowAnonymous]
     public async Task<IActionResult> GetPagedAll(int pageNumber, int pageSize) => CreateActionResult(await courseService.GetPagedAllListAsync(pageNumber,pageSize));
     
     [HttpPost]

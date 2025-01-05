@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { courseService } from '../services/courseService';
-import { cartService } from '../services/cartService';
-import { useAuth } from '../context/AuthContext';
+import { courseService } from '../../services/courseService';
+import { cartService } from '../../services/cartService';
+import { useAuth } from '../../context/AuthContext';
 import alertify from 'alertifyjs';
+import { useLocalCart } from '../../context/LocalCartContext';
 
 const CourseDetail = () => {
   const { id } = useParams();
@@ -11,6 +12,7 @@ const CourseDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const { isAuthenticated } = useAuth();
+  const { addToLocalCart } = useLocalCart();
 
   useEffect(() => {
     const fetchCourse = async () => {
@@ -30,23 +32,24 @@ const CourseDetail = () => {
 
   const handleAddToCart = async () => {
     if (!isAuthenticated()) {
-      alertify.error('Please login to add items to cart');
+      addToLocalCart({
+        id: course.id,
+        name: course.name,
+        description: course.description,
+        price: course.price,
+        imageUrl: course.imageUrl
+      });
       return;
     }
 
     try {
-      console.log('Attempting to add course:', id);
       const response = await cartService.addToCart(id);
-      console.log('Add to cart response:', response);
-
       if (response.data.isSuccess) {
         if (response.data.data) {
           alertify.success('Course added to cart successfully');
         } else {
           alertify.warning('Course is already in your cart');
         }
-      } else {
-        alertify.error('Failed to add course to cart');
       }
     } catch (err) {
       console.error('Add to cart error:', err);

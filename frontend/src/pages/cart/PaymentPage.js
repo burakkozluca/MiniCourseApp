@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { cartService } from '../services/cartService';
-import { courseService } from '../services/courseService';
+import { cartService } from '../../services/cartService';
+import { courseService } from '../../services/courseService';
 import alertify from 'alertifyjs';
 import './PaymentPage.css';
 

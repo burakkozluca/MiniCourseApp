@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation, Link } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
+import { useAuth } from '../../context/AuthContext';
 import './Login.css';
 
 const Login = () => {
@@ -88,7 +88,14 @@ const Login = () => {
           </button>
         </form>
         <div className="mt-3 text-center">
-          Don't have an account? <Link to="/register">Register here</Link>
+          <div className="mb-2">
+            <Link to="/forget-password" className="text-primary">
+              Forgot Password?
+            </Link>
+          </div>
+          <div>
+            Don't have an account? <Link to="/register">Register here</Link>
+          </div>
         </div>
       </div>
     </div>

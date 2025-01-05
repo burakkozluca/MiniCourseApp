@@ -1,7 +1,7 @@
-import { Navigate, useLocation } from 'react-router-dom';
+import { Navigate, useLocation, Outlet } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
-export const AdminGuard = ({ children }) => {
+export const AdminGuard = () => {
   const { isAuthenticated, isAdmin } = useAuth();
   const location = useLocation();
 
@@ -20,5 +20,5 @@ export const AdminGuard = ({ children }) => {
     return <Navigate to="/" replace />;
   }
 
-  return children;
-}; 
+  return <Outlet />;
+};
